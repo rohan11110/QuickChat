@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.App{
+    min-height: 100vh;
+    display: flex;
+    background-image: url('./Leonardo_Phoenix_10_A_sleek_and_modern_darkthemed_background_d_3.jpg') ;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(136,136,136,0.281);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
