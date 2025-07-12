@@ -28,8 +28,7 @@ import UserListItem from '../userAvatar/UserListItem';
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 import { Spinner } from "@chakra-ui/react"
 import { getSender } from '@/config/ChatLogic';
-import NotificationBadge from 'react-notification-badge';
-import {Effect} from 'react-notification-badge';
+import { Badge } from '@chakra-ui/react';
 
 
 const SideDrawer = () => {
@@ -168,7 +167,7 @@ const SideDrawer = () => {
                             <Button variant="outline"  color={textColor} size="sm" onMouseEnter={() => setTextColor("white")}
                                 onMouseLeave={() => setTextColor("black")} >
                                     
-                                {notification.length >= 1 && <NotificationBadge count={notification.length} effect={Effect.SCALE} />}
+                                {notification.length >= 1 && <Badge count={notification.length} />}
                                 <i class="fa-solid fa-bell" ></i>
                             </Button>
                         </MenuTrigger>
