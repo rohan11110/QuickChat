@@ -7,7 +7,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react(),tsconfigPaths()],
   proxy: {
-    '/api': 'http://localhost:5000', // Example: proxy your API requests
+    '/api': 'http://localhost:5001', // Example: proxy your API requests
   },resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),  // This maps `@` to the `src` directory
