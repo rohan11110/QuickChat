@@ -1,4 +1,7 @@
 [build]
   base = "FRONT"
-  publish = "FRONT"
+  publish = "dist"
   command = "npm install --legacy-peer-deps && npm run build"
+
+[environment]
+  VITE_BACKEND_URL = "https://quickchat-backend-iqen.onrender.com"
